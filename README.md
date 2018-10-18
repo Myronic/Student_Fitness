@@ -13,3 +13,4 @@
 * Report page with weekly reports of progress.  
 ---more to be added(under development)---  
 ##### (Read SRS for detailed description.)
+##### Under development phase. Built using HTML, CSS, JS, Jquery, PHP.
