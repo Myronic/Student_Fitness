@@ -4,7 +4,14 @@
 <?php
 	
 	session_start();
+	if($_SESSION['username']!="")
+	{
+		session_destroy();
+	}		
 	$_SESSION['message']="";
+	$_SESSION['username']="";
+	
+	
 ?>
 <html lang="en">
     <head>

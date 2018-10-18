@@ -1,0 +1,79 @@
+
+body{
+/*    background-image:  url("short.jpg") ;*/
+        background-image: linear-gradient(100deg,#3F5EFB, #E100FF);
+    font-family: monospace;
+    color: white;
+    
+}
+.con{
+/*    background-color:  #007bff;*/
+    background-color:  rgba(255,255,255,0.25);
+    background-position: center cover;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+/*    border: 2px solid white;*/
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 60%;
+} 
+
+.c{
+    background-color:  rgba(255,255,255,0.3);
+    border-radius: 5px;
+    height: auto;
+    color: white;
+    box-shadow: 0px 10px 20px 0 rgba(0,0,0,0.02);
+
+}
+
+h3{
+    font-size: 2vw;
+     text-align: center;
+    text-transform:capitalize ;
+    margin-top:10px;
+    color: white
+}
+
+
+
+.innercol{
+/*    background-color: whitesmoke;*/
+    border-radius: 5px;
+}
+
+
+hr{
+    margin: 10px;
+    opacity: 0;
+}
+
+._hr{
+    border: 1px solid lightgray; border-radius: 2px
+}
+
+.btn{
+    border: none;
+    background-image: linear-gradient(135deg,#3F5EFB, #E100FF);
+    color: white;
+}
+
+.btn:hover {
+   box-shadow: 0px 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+
+.tab{
+    border-radius: 5px;
+    background-color:  rgba(255,255,255,0.3);
+}
+
+
+.act{
+    border-radius: 5px;
+    color: black;
+    margin: -2px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2),0px -5px 20px rgba(0,0,0,0.05);
+
+}

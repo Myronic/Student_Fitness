@@ -75,7 +75,7 @@
                             <li class="divider"></li>
 							<li><a href="#">View Reports</a></li>
 							<li class="divider"></li>
-                            <li><a href="#">Logout</a></li>
+							<li><a href="logout.php">Logout</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -7,49 +7,32 @@
 	$con=mysqli_connect("127.0.0.1","root","","webfit1");
 	mysqli_select_db($con, 'webfit1');
 	
-	$username=$_SESSION['username'];
-	
-	$q1 = "select height,weight from users where username = '$username' ";
-	$q2 = mysqli_query($con, $q1);
-	$q3 = mysqli_fetch_array($q2);
-
-	$h = $q3['height'];
-	$w = $q3['weight'];
-	
-	$bmi = $w / ($h*0.01*$h*0.01) ;
-	$bmi = number_format($bmi,2)."<br>";
-	
-	if(isset($_POST['proceed']))
+	if($_SESSION['username']!="")
 	{
-		if(isset($_POST['optradio']))
-		{
-			$goal=$_POST['optradio'];
-			$q1 = "Update users set goal='$goal' where username = '$username' ";
-			$q2 = mysqli_query($con, $q1);
-			header("Location: workout1.php");
-			
-			//  Displaying Selected Value
-		}
-		/*$username=$_POST['username'];
-		$pass=$_POST['pwd'];
 		
-		$sql= "Select * from users where username='$username' && password='$pass' " ;
-		$result=mysqli_query($con,$sql);
-		$count = mysqli_num_rows($result);
-		if($count==1)
-		{	
-			$_SESSION['message']=" ";
-			$_SESSION['username']=$username;
-			header("Location: workout1.php");
-		}
-		else
-		{
-			header("Location: login.php");
-			$_SESSION['message']="Username/Password did not match!";
-		}
-	}	*/
-	}
+		$username=$_SESSION['username'];
 	
+		$q1 = "select height,weight from users where username = '$username' ";
+		$q2 = mysqli_query($con, $q1);
+		$q3 = mysqli_fetch_array($q2);
+
+		$h = $q3['height'];
+		$w = $q3['weight'];
+	
+		$bmi = $w / ($h*0.01*$h*0.01) ;
+		$bmi = number_format($bmi,2)."<br>";
+	
+		if(isset($_POST['proceed']))
+		{
+			if(isset($_POST['optradio']))
+			{
+				$goal=$_POST['optradio'];
+				$q1 = "Update users set goal='$goal' where username = '$username' ";
+				$q2 = mysqli_query($con, $q1);
+				header("Location: workout1.php");
+			}		
+		}
+	}
 		
 ?>
 

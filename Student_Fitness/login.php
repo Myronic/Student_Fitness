@@ -4,24 +4,60 @@
 	$con=mysqli_connect("127.0.0.1","root","","webfit1");
 	
 	mysqli_select_db($con, 'webfit1');
+	
+	if($_SESSION['username']!="")
+	{
+		header("Location: workout1.php");
+	}
+	
 	if(isset($_POST['login']))
 	{
-		$username=$_POST['username'];
-		$pass=$_POST['pwd'];
+		$username=mysqli_real_escape_string($con,$_POST['username']);
+		$pass=mysqli_real_escape_string($con,$_POST['pwd']);
 		
-		$sql= "Select * from users where username='$username' && password='$pass' " ;
-		$result=mysqli_query($con,$sql);
-		$count = mysqli_num_rows($result);
-		if($count==1)
-		{	
-			$_SESSION['message']=" ";
-			$_SESSION['username']=$username;
-			header("Location: workout1.php");
+		if($username=='admin' && $pass=='12')
+		{
+			header("Location: adchat.php");
 		}
 		else
 		{
-			header("Location: login.php");
-			$_SESSION['message']="Username/Password did not match!";
+			$sql= "Select * from users where username=? " ;
+			
+			$stmt = mysqli_stmt_init($con);
+			if(!mysqli_stmt_prepare($stmt,$sql))
+			{
+				echo"SQL error";
+			} 
+			else
+			{
+				mysqli_stmt_bind_param($stmt,"s",$username);
+				mysqli_stmt_execute($stmt);
+				$result=mysqli_stmt_get_result($stmt);
+				$count = mysqli_num_rows($result);
+				if($count==1)
+				{	
+					if($row=mysqli_fetch_assoc($result))
+					{
+						$check=password_verify($pass,$row['password']);
+						if( $check == false )
+						{
+							$_SESSION['message']="Username/Password did not match!";
+							header("Location: login.php");
+						}
+						else
+						{
+							$_SESSION['message']=" ";
+							$_SESSION['username']=$username;
+							header("Location: workout1.php");
+						}
+					}		
+				}
+				else
+				{
+					$_SESSION['message']="Username does not exist!";
+					header("Location: login.php");
+				}
+			}
 		}
 	}	
 ?>
