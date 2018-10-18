@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2018 at 05:26 PM
+-- Generation Time: Oct 15, 2018 at 06:16 PM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -97,6 +97,27 @@ INSERT INTO `chall` (`id`, `names`, `some`, `some1`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `chat`
+--
+
+CREATE TABLE `chat` (
+  `username` varchar(200) NOT NULL,
+  `msg` varchar(30000) DEFAULT NULL,
+  `received` varchar(30000) DEFAULT NULL,
+  `status` int(11) NOT NULL,
+  `chatid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `chat`
+--
+
+INSERT INTO `chat` (`username`, `msg`, `received`, `status`, `chatid`) VALUES
+('PKK', 'hii`wer r u`heyyy~hiiii', 'heyyy`gymm', 1, 6);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `questions`
 --
 
@@ -140,7 +161,7 @@ CREATE TABLE `users` (
   `name` varchar(30) NOT NULL,
   `email` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(1000) DEFAULT NULL,
   `height` int(11) NOT NULL,
   `weight` int(11) NOT NULL,
   `age` int(11) NOT NULL,
@@ -153,9 +174,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userid`, `name`, `email`, `username`, `password`, `height`, `weight`, `age`, `gender`, `goal`) VALUES
-(3, '', 'prajwal.kotian@somaiya.edu', 'PKK', '12345', 168, 62, 0, 'Male', ''),
-(5, '', 'my.c@som.edu', 'myronic', '123', 176, 70, 0, 'Male', ''),
-(24, '', 'sd@gmail.com', 'myy', 'bjh', 165, 80, 23, 'Male', 'Fat Loss');
+(29, 'aay', 'ay.ok@som.edu', 'aay', '$2y$10$8KXb8Lbbzv5s0xjeoJ0qS.QcOezwlT7rRonx107P.zvwzjwObqiNe', 179, 70, 20, 'Male', 'Fat Loss'),
+(30, 'Prajwal', 'prajwal.kotian@somaiya.edu', 'PKK', '$2y$10$JhA.DLiH0PlSL1VF8lxDuuQtT5V1sQJ5pWGyyt2T/zcwT2UiEiUZq', 170, 62, 20, 'Male', 'Lean Mass'),
+(31, 'Myron', 'my.c@som.edu', 'myronic', '$2y$10$KeFQUSN6hoAAzqWcj0.gROaadDu4oNROVrc44c9MEYay.uQKt5NMW', 178, 75, 20, 'Male', 'Mass Gain'),
+(37, 'mitul', 'sd@gmail.com', 'mkkk', '$2y$10$xRDpczbaTQiw5iaRPjN7aeRk1VCTprNW00OBBxavrbowHFYzXIgv2', 185, 85, 20, 'Male', 'Mass Gain'),
+(38, 'amol', 'amol.d@som.edu', 'amol', '$2y$10$kAtCultYDYUqFMnyF7UoJuGbwnJ.mPTy1dEjztYtfQx5UM3vwgpGu', 179, 78, 20, 'Male', 'Mass Gain');
 
 --
 -- Indexes for dumped tables
@@ -166,6 +189,12 @@ INSERT INTO `users` (`userid`, `name`, `email`, `username`, `password`, `height`
 --
 ALTER TABLE `answers`
   ADD PRIMARY KEY (`ansid`);
+
+--
+-- Indexes for table `chat`
+--
+ALTER TABLE `chat`
+  ADD PRIMARY KEY (`chatid`);
 
 --
 -- Indexes for table `questions`
@@ -190,6 +219,12 @@ ALTER TABLE `answers`
   MODIFY `ansid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
+-- AUTO_INCREMENT for table `chat`
+--
+ALTER TABLE `chat`
+  MODIFY `chatid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
@@ -199,7 +234,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
