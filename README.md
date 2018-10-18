@@ -12,3 +12,4 @@
 ### -Utilities: BMI, fat%, WHR etc calculator to keep a personal check.
 ### -Report page with weekly reports of progress.
 ### more to be added(under development).
+#### SRS for detailed description.
