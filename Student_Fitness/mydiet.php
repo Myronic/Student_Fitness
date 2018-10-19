@@ -14,8 +14,10 @@
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<!--
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
 		rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+-->
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,7 +29,6 @@
 		
 </head>
 <body>
-
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -47,7 +48,9 @@
         <li class="active"><a href="workout1.php">Workout</a></li>
         <li><a href="mydiet.php">Diet</a></li>
         <li><a href="#">Challenges</a></li>
-      </ul>
+        <li><a href="myforum.php">My Questions</a></li>
+
+	</ul>
 	  
 	  <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -59,16 +62,13 @@
                             <li class="divider"></li>
 							<li><a href="#">View Reports</a></li>
 							<li class="divider"></li>
-                            <li><a href="#">Logout</a></li>
+							<li><a href="logout.php">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
     </div>
   </div>
 </nav>
-
-	
-
  <div class=" con ">
           <div class="row justify-content-center" style="background-color: gray ; border-radius:10px">
            <label class="radio-inline">

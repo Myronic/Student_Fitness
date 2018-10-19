@@ -1,44 +1,32 @@
 body{
-    color: ghostwhite;
-    font-size: .95em;
-    
-}
-.rowHeight{
-    height: auto;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    padding: 5px;
-    background-color: darkgray;
-    margin: 5px;
+    background-image: linear-gradient(100deg,#3F5EFB, #E100FF);
+    font-family: monospace;
 }
 
-.rowHeader{
-    padding: 5px;
-    margin: 5px;
+.container{
+    background-color:  rgba(255,255,255,0.25);
     height: auto;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    background-color: gray;
-    color: whitesmoke;
-}
-
-.con{
-    
-background-color:  ghostwhite;
-
-    background-position: center cover;
-    height: auto;
-    width: 100vw;
-    padding: 20px 50px;
-    border: 1px solid white;
+    width: 100%;
+    padding: 10px;
     border-radius: 5px;
-} 
-
-hr{
     margin-top: 10px;
     margin-bottom: 10px;
+    max-width: 80%;
+    font-family: monospace;
+    color: white; 
+    text-align: center;
+} 
+
+em{
+ font-size: 1.7vw;    
+}
+
+
+
+
+hr{
+    background-color: white;
+    opacity: 0.3;
 }
 
 .pcf{
