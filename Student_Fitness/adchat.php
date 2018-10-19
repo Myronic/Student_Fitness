@@ -1,10 +1,6 @@
-
-
-		
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,9 +29,7 @@
     border-radius: 5px;
     margin-top: 10px;
     max-width: 100%;
-    font-size: 20px;
-    
-
+    font-size: 20px;    
 } 
 
   .msgs
@@ -44,6 +38,7 @@
 	height:500px;
 	overflow-y:scroll;
   }
+      
   .sent
   {
 	background-color:blue;
@@ -56,8 +51,8 @@
 	border-top-right-radius:0px;
 	border-top-left-radius:15px;
 	border-bottom-right-radius:15px;
-	border-bottom-left-radius:15px; 
- }
+	border-bottom-left-radius:15px;
+      }
   
 
   .rec
@@ -73,7 +68,6 @@
 	border-top-left-radius:0px;
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
-
   }
 
   textarea {
@@ -121,42 +115,25 @@ function stopfun() {
 });
 </script>
 </head>
-<body>
-	
-	<!-- <div id="content" class="msgs">
-		
-	
-		
-	
-	</div>
+    <body>		
+    <div class="container con">
+        <div id="content" class="msgs"></div>
+        <hr>
+        <div align="left">
+            <h4>Type here...</h4>
+            <form action="adchatact.php" method="POST">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-8" align="center">
+                        <textarea rows="2" name="chat" id="txt"></textarea>
+                    </div>
+                   <div class="col-lg-1">
+                        <input type="submit" name="submit" value="Send" class="btn btn-primary btn-lg">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-	
-	<div align="center">
-	<h4>Type your question here :</h4>
-		<form action="adchatact.php" method="POST">
-			<textarea rows="3" name="chat" cols="100"></textarea>
-			<input type="submit" name="submit" value="Send" class="btn btn-primary">
-		</form>
-	</div> -->
 
-		
-		<div class="container con">
-			<div id="content" class="msgs"></div>
-<hr>
-			<div align="center">
-			<h4>Type your question here :</h4>
-				<form action="adchatact.php" method="POST">
-					<div class="row text-center justify-content-center">
-						<div class="col-lg-8" align="center">
-							<textarea rows="2" name="chat" id="txt"></textarea>
-						</div>
-					<div class="col-lg-1">
-						<input type="submit" name="submit" value="Send" class="btn btn-primary">
-					</div>
-				</form>
-			</div>
-		</div>
-		
-			
 </body>
 </html>

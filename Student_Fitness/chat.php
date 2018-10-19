@@ -1,7 +1,3 @@
-
-
-		
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +13,24 @@
   crossorigin="anonymous"></script>
   
   <style>
+    body{
+    /*background-image: linear-gradient(100deg,#3F5EFB, #E100FF);*/
+    font-family: monospace;
+    background-color: white;
+}
+      
+.con{
+    background-color:  rgba(255,255,255,0.25);
+    background-position: center cover;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 100%;
+    font-size: 20px;    
+} 
+      
   .msgs
   {
 	width:100%;
@@ -25,18 +39,49 @@
   }
   .sent
   {
-	background-color:#94FB7B;
+	background-color:blue;
 	float:right;
-	border-radius:4px;
-	color:#111;
-  }
+	border:2px solid blue;
+	margin-right:10px;
+	padding: 5px 10px; 
+	color: white;
+	/*font-weight:bold;*/
+	border-top-right-radius:0px;
+	border-top-left-radius:15px;
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px; 
+ }
+  
+
   .rec
   {
-	background-color:#37D411;
+	background-color:lightgray;
 	float:left;
-	border-radius:4px;  
-	color:#111;
-  }
+	border:2px solid lightgray;
+	margin-left:10px;
+	padding: 5px 10px; 
+	color: black;
+	font-weight:bold;
+	border-top-right-radius:15px;
+	border-top-left-radius:0px;
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+
+  }    
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2),0px -5px 5px rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+#txt{
+        color: dimgray;
+    font-size: 1.5em;
+}
+      
   </style>
 <script>
 
@@ -75,23 +120,26 @@ function stopfun() {
 </head>
 <body>
 	
-	<div id="content" class="msgs">
-		
-	
-		
-	
+	<div id="content" class="msgs">	
 	</div>
 
-	
-	<div>
-	<h4>Type here :</h4>
-		<form action="chatact.php" method="POST">
-			<textarea rows="2" name="chat" cols="100"></textarea>
-			<input type="submit" name="submit" value="Send" class="btn btn-primary">
-		</form>
-	</div>
-
-		
+   <div class="container con">
+        <div id="content" class="msgs"></div>
+        <hr>
+        <div align="left">
+            <h4>Type here...</h4>
+            <form action="chatact.php" method="POST">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-8" align="center">
+                        <textarea rows="2" name="chat" id="txt"></textarea>
+                    </div>
+                   <div class="col-lg-1">
+                        <input type="submit" name="submit" value="Send" class="btn btn-primary btn-lg">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>		
 		
 		
 			
