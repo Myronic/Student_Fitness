@@ -1,0 +1,43 @@
+/*$(document).ready(function(){
+		
+		 
+		 <?php
+          session_start();
+          $con=mysqli_connect("127.0.0.1","root","","webfit1");
+          mysqli_select_db($con, 'webfit1');
+		  $user=$_SESSION['username'];
+          
+          $sql="select * from lchall where username='$user' && challengename='50pushup'";
+		  $result=mysqli_query($con,$sql);
+		  
+		  if(mysqli_num_rows($result) > 0)
+		  {
+			$row=mysqli_fetch_assoc($result);
+			$times=$row['time'];
+			$per=$row['status'];
+		  
+        ?>
+
+		var p = "<?php echo $per ?>";
+		alert(p);
+		var n=parseInt(p);
+		n=n/3;
+		if(n>0)
+		{
+			alert(n);
+			for(i=1;i<=n;i++)
+			{
+				alert(i);
+				var cid=i.toString();
+				document.getElementById(cid).checked=true;
+			}
+		}
+		<?php
+		
+		  }
+		  ?>
+		
+	 
+	 
+
+	 });*/

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+     <link rel="stylesheet" href="short.css">
+     <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
+</head> 
+
+     <style>
+      .mystyle{
+    border-radius: 5px;
+    color: black;
+    margin: -2px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2),0px -5px 20px rgba(0,0,0,0.05);
+    }
+     </style>
+<body>
+
+
+
+
+<div id="leaveani">
+<div class="container">
+
+
+		
+	<div class="fallingLeaves">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	
+	
+	</div>
+	
+</div>
+</div>
+
+
+
+
+
+    <div class="container con">
+   <div class="container tab" style="padding: 10px">
+           <div class="row justify-content-around">
+           <div class="col-5 c">
+               <h3>duration: 10 mins</h3>
+               <hr>
+              <h3>Difficulty: <span style="color: whitesmoke">MEDIUM</span></h3>
+           </div>
+           <div class="col-5 c">
+               <h3>Challange name:</h3>
+               <hr>
+              <h3><span style="color: whitesmoke">Extractor</span></h3>
+           </div>
+       </div>
+       <br>
+       <div class="row justify-content-around">
+             <div class="col-11">
+               <div class="text-center">
+                    <button type="button" class="btn-lg btn" onclick="startTimer(1,12)"><h3>START CHALLENGE</h3></button>
+               </div>
+           </div>
+       </div>    
+   </div>
+       
+       <br>
+       <div id="mainc" class="container tab text-center">
+           <div class="row justify-content-around">
+               <div class="col-4 innercol">
+                   <h3>activity</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>duration</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3>timer</h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3>?</h3>
+               </div>
+           </div>
+           <hr class="_hr">
+            
+             <div id="full1"class="row justify-content-around active1 act">
+               <div class="col-4 innercol">
+                   <h3>pushups</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>60 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="1">60</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result1" disabled></h3>
+               </div>
+           </div>
+           <hr>
+           <div id="full2"class="row justify-content-around active2">
+               <div class="col-4 innercol">
+                   <h3>rest</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>30 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="2">30</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result2" disabled></h3>
+               </div>
+           </div>
+           <hr>
+           <div id="full3"class="row justify-content-around active3">
+               <div class="col-4 innercol">
+                   <h3> squats</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>90 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="3">90</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result3" disabled></h3>
+               </div>
+           </div>
+           <hr>
+           <div id="full4"class="row justify-content-around active4">
+               <div class="col-4 innercol">
+                   <h3>rest</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>30 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="4">30</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result4" disabled></h3>
+               </div>
+           </div>
+           <hr>
+           <div id="full5"class="row justify-content-around active5">
+               <div class="col-4 innercol">
+                   <h3> crunches</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>60 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="5">60</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result5" disabled></h3>
+               </div>
+           </div>
+           <hr>
+           <div id="full6"class="row justify-content-around active6">
+               <div class="col-4 innercol">
+                   <h3>rest</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>60 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="6">60</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result6" disabled></h3>
+               </div>
+           </div>
+           <hr>
+           <div id="full7"class="row justify-content-around active7">
+               <div class="col-4 innercol">
+                   <h3> lunges</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>60 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="7">60</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result7" disabled></h3>
+               </div>
+           </div>
+           <hr>
+           <div id="full8"class="row justify-content-around active8">
+               <div class="col-4 innercol">
+                   <h3>Rest</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>30 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="8">30</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result8" disabled></h3>
+               </div>
+           </div> 
+              <hr>
+           <div id="full9"class="row justify-content-around active9">
+               <div class="col-4 innercol">
+                   <h3>Jumping jacks</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>90 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="9">90</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result9" disabled></h3>
+               </div>
+           </div>
+              <hr>
+           <div id="full10" class="row justify-content-around active10">
+               <div class="col-4 innercol">
+                   <h3>Rest</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>30 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="10">30</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result10" disabled></h3>
+               </div>
+           </div>
+              <hr>
+           <div id="full11" class="row justify-content-around active11">
+               <div class="col-4 innercol">
+                   <h3> Sit-ups</h3>
+               </div>
+               <div class="col-4 innercol">
+                   <h3>60 seconds</h3>
+               </div>
+               <div class="col-2 innercol">
+                   <h3><p id="11">60</p></h3>
+               </div>
+               <div class="col-1 innercol">
+                   <h3><input type="checkbox" id="result11" disabled></h3>
+               </div>
+           </div>          
+       </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="short.js"></script>
+
+
+</html>

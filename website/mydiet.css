@@ -1,0 +1,80 @@
+body{
+    background-image: linear-gradient(100deg,#3F5EFB, #E100FF);
+    font-family: monospace;
+}
+
+.container{
+    background-color:  rgba(255,255,255,0.25);
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    font-family: monospace;
+    color: white; 
+    text-align: center;
+} 
+
+em{
+ font-size: 1.7vw;    
+}
+
+
+
+
+hr{
+    background-color: white;
+    opacity: 0.3;
+}
+
+.pcf{
+/*
+    border: 0.5px solid lightgray;
+    border-collapse:inherit;
+*/
+}
+
+.rmargin{
+    margin-top: 20px;
+}
+
+#veg , #nonveg  {
+    font-family: cursive;
+    font-size: 2vw;
+}
+
+#veg{
+    color: lawngreen;
+}
+
+#nonveg {
+    color: orangered;
+}
+
+:focus{
+  outline:none;
+}
+
+.radio{
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
+  border:4px solid #ccc;
+  border-top-color:#bbb;
+  border-left-color:#bbb;
+  background:#fff;
+  width:1.5vw;
+  height: 1.5vw;
+  border-radius:50%;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.radio:checked{
+  border:5px solid deepskyblue ;
+}
+
+
+/*input[type='radio'] { transform: scale(2); }*/

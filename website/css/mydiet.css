@@ -1,0 +1,92 @@
+body{
+    color: ghostwhite;
+    font-size: .95em;
+    
+}
+.rowHeight{
+    height: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: darkgray;
+    margin: 5px;
+}
+
+.rowHeader{
+    padding: 5px;
+    margin: 5px;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.con{
+    
+background-color:  ghostwhite;
+
+    background-position: center cover;
+    height: auto;
+    width: 100vw;
+    padding: 20px 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+} 
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pcf{
+/*
+    border: 0.5px solid lightgray;
+    border-collapse:inherit;
+*/
+}
+
+.rmargin{
+    margin-top: 20px;
+}
+
+#veg , #nonveg  {
+    font-family: cursive;
+    font-size: 2vw;
+}
+
+#veg{
+    color: lawngreen;
+}
+
+#nonveg {
+    color: orangered;
+}
+
+:focus{
+  outline:none;
+}
+
+.radio{
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
+  border:4px solid #ccc;
+  border-top-color:#bbb;
+  border-left-color:#bbb;
+  background:#fff;
+  width:1.5vw;
+  height: 1.5vw;
+  border-radius:50%;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.radio:checked{
+  border:5px solid deepskyblue ;
+}
+
+
+/*input[type='radio'] { transform: scale(2); }*/

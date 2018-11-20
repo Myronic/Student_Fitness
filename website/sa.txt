@@ -1,0 +1,114 @@
+function validcheck(a)
+      {  
+
+		
+		var maincount = "<?php echo $rowc ?>";
+		var mc=parseInt(maincount);
+		alert(mc+1);
+		if(maincount>0)
+		{
+			var per1 = "<?php echo $per ?>";
+			var times12 = "<?php echo $times ?>";
+			var ms=Date.parse(times12);
+			var t=new Date().getTime();
+			var num=parseInt(a);
+			var difference = t - ms;
+			
+		
+			var dd = Math.floor(difference/1000/60/60/24);
+			difference -= dd*1000*60*60*24
+
+		   var hd = Math.floor(difference/1000/60/60);
+			difference -= hd*1000*60*60
+
+			var md = Math.floor(difference/1000/60);
+			difference -= md*1000*60
+
+			var sd = Math.floor(difference/1000);
+			
+			
+			alert(dd+" " +hd + " "+md+" "+sd);
+			if(per1<=87)
+			{
+				if(per1==( (num-1) * 3 ))
+				{
+					if(dd>=2)
+					{
+						alert("hmm");
+						<?php 
+						$per=$per+3;
+						$sql="update lchall set status='$per',time=now() where username='$user'";
+						$result=mysqli_query($con,$sql);?>
+						
+					}
+					else
+					{
+						alert("Sorry ! You Cannot Attempt This Challenge Now.");
+						document.getElementById(a).checked=false;
+					}
+				}
+				else
+				{
+					alert("Sorry ! You Cannot Attempt This Challenge Now.");
+					document.getElementById(a).checked=false;
+				}
+			}
+			else if(per1>87&&per1<=96)
+			{
+				if(num>30&&num<=34)
+				{
+					if(dd>=2)
+					{
+						alert("hmm");
+						<?php 
+						$per=$per+2;
+						$sql="update lchall set status='$per',time=now() where username='$user'";
+						$result=mysqli_query($con,$sql);?>
+					}
+					else
+					{
+						alert("Sorry ! You Cannot Attempt This Challenge Now.");
+						document.getElementById(a).checked=false;
+					}
+				}
+				else
+				{
+					alert("Sorry ! You Cannot Attempt This Challenge.");
+					document.getElementById(a).checked=false;
+				}
+			}
+			else
+			{
+					if(num>34&&num<=36)
+					{
+						if(dd>=2)
+						{
+							alert("hmm");
+							<?php 
+							$per=$per+1;
+							$sql="update lchall set status='$per',time=now() where username='$user'";
+							$result=mysqli_query($con,$sql);?>
+						}
+						else
+						{
+							alert("Sorry ! You Cannot Attempt This Challenge Now.");
+							document.getElementById(a).checked=false;
+						}
+					}
+					else
+					{
+						alert("Sorry ! You Cannot Attempt This Challenge.");
+						document.getElementById(a).checked=false;
+					}
+			}
+		}
+		/*else if(mc==0)
+		{
+		
+			<?php
+				$sql="insert into lchall(username,chname,status,time) values('$user','50pushup',3,now())";
+				$result=mysqli_query($con,$sql);
+			?>
+		
+		}*/
+	  }

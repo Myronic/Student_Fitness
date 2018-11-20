@@ -1,0 +1,144 @@
+#leaveani
+{
+display:none;
+}
+
+body{
+/*    background-image:  url("short.jpg") ;*/
+        background-image: linear-gradient(100deg,#3F5EFB, #E100FF);
+    font-family: monospace;
+    color: white;
+    
+}
+.con{
+/*    background-color:  #007bff;*/
+    background-color:  rgba(255,255,255,0.25);
+    background-position: center cover;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+/*    border: 2px solid white;*/
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 60%;
+} 
+
+.c{
+    background-color:  rgba(255,255,255,0.3);
+    border-radius: 5px;
+    height: auto;
+    color: white;
+    box-shadow: 0px 10px 20px 0 rgba(0,0,0,0.02);
+
+}
+
+h3{
+    font-size: 2vw;
+     text-align: center;
+    text-transform:capitalize ;
+    margin-top:10px;
+    color: white
+}
+
+
+
+.innercol{
+/*    background-color: whitesmoke;*/
+    border-radius: 5px;
+}
+
+
+hr{
+    margin: 10px;
+    opacity: 0;
+}
+
+._hr{
+    border: 1px solid lightgray; border-radius: 2px
+}
+
+.btn{
+    border: none;
+    background-image: linear-gradient(135deg,#3F5EFB, #E100FF);
+    color: white;
+}
+
+.btn:hover {
+   box-shadow: 0px 10px 20px 0 rgba(0,0,0,0.2);
+}
+input[type=submit]:hover
+{
+    box-shadow: 0px 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+
+.tab{
+    border-radius: 5px;
+    background-color:  rgba(255,255,255,0.3);
+}
+
+
+
+.fallingLeaves span {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position:relative;
+    bottom:200px;
+    margin:left:-40px;
+    background:url("conf.png");
+    -webkit-animation: fallingLeaves 10s infinite linear;
+
+}
+.fallingLeaves span:nth-child(5n+5) {
+    -webkit-animation-delay: 1.3s;
+}
+.fallingLeaves span:nth-child(3n+2) {
+    -webkit-animation-delay: 1.5s;
+}
+.fallingLeaves span:nth-child(2n+5) {
+
+    -webkit-animation-delay: 1.7s;
+    
+}
+
+.fallingLeaves span:nth-child(3n+10) {
+
+    -webkit-animation-delay: 2.7s;
+    
+}
+.fallingLeaves span:nth-child(7n+2) {
+
+    -webkit-animation-delay: 3.5s;
+   
+}
+.fallingLeaves span:nth-child(4n+5) {
+
+    -webkit-animation-delay: 5.5s;
+  
+}
+.fallingLeaves span:nth-child(3n+7) {
+
+    -webkit-animation-delay: 8s;
+    
+}
+@-webkit-keyframes fallingLeaves {
+  0% {
+    opacity: 1;
+
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+
+    -webkit-transform: translate(100px, 2300px) rotateZ(270deg); 
+  }
+  100% {
+    opacity: 0;
+
+    -webkit-transform: translate(150px, 2000px) rotateZ(360deg);
+  }
+}
+
+
+
