@@ -9,8 +9,9 @@
 * Long challenges(duration-12weeks) with realtime track of progress for the serious dudes.   
 * Personal chat with trainers(uncertified but experienced :P).  
 * Forums where one can ask and answer questions.
-* Utilities: BMI, fat%, WHR etc calculator to keep a personal check.  
-* Report page with weekly reports of progress.  
+* Utilities: BMI, fat%, WHR etc calculator to keep a personal check.    
+Todo:  
+[ ] Report page with weekly reports of progress.  
 ---more to be added(under development)---  
 ##### (Read SRS for detailed description.)
 ##### Under development phase. Built using HTML, CSS, JS, Jquery, PHP.
