@@ -1,6 +1,6 @@
 # Student_Fitness
 
-## *A complete fitness webapp designed keeping in mind the daily lifestyle of a college going student, to help him achieve his/her fitness goals and maintaining a healthy lifestyle parallely with thier academics.*
+## *A complete fitness webapp designed keeping in mind the daily lifestyle of a college going student, to help him achieve his/her fitness goals and maintaining a healthy lifestyle parallely with their academics.*
 
 ## Features: 
 * User account for individual's track of progress.  
@@ -13,5 +13,5 @@
 Todo:  
 [ ] Report page with weekly reports of progress.  
 ---more to be added(under development)---  
-##### (Read SRS for detailed description.)
+##### (Read SRS for detailed description)
 ##### Under development phase. Built using HTML, CSS, JS, Jquery, PHP.
