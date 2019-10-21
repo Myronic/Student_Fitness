@@ -9,7 +9,7 @@
 	{
 		$user=$_SESSION['username'];
 		$qstn=$_POST['qtn'];
-		echo $qstn;
+		print $qstn;
 		$sql= "insert into questions(username,quest) values('$user','$qstn')" ;
 		$result=mysqli_query($con,$sql);
 		header("Location: forum.php");
