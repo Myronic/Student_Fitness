@@ -19,7 +19,6 @@ OCTOBER 31, 2020 16:04
 You submitted 1 to Myronic/Student_Fitness
 Legend
 In Review
-Your PR has been accepted by a maintainer and is currently within the review period, which lasts for fourteen days.
 Pending
 Your PR has not yet been accepted by a maintainer. A maintainer can accept your PR by merging it, adding the "hacktoberfest-accepted" label to it, or approving it.
 Invalid
