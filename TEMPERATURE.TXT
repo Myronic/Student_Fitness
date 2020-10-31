@@ -22,7 +22,6 @@ In Review
 Pending
 Your PR has not yet been accepted by a maintainer. A maintainer can accept your PR by merging it, adding the "hacktoberfest-accepted" label to it, or approving it.
 Invalid
-Your PR has been labeled as "invalid" or "spam" by a maintainer and won't count toward winning Hacktoberfest.
 Ineligible Repository
 Your PR was submitted to a repository that is not participating in Hacktoberfest. Maintainers of the repository can add the "hacktoberfest" topic to their repository if they wish to participate. Alternatively, an individual PR can be opted-in with a maintainer adding the "hacktoberfest-accepted" label to the PR.
 Accepted
